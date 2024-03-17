@@ -1,0 +1,329 @@
+:root {
+  --font-family-main: "Poppins", sans-serif;
+  --font-size-small: 12px;
+  --font-size-meduim: 16px;
+  --font-size-larg: 20px;
+  --font-size-xlarg: 30px;
+  --color-base: #525252;
+  --color-base-sec: #1c1c1c;
+  --color-white: #ffffff;
+  --direction-var: ltr;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-main);
+  font-style: normal;
+}
+
+.max-w-100 {
+  max-width: 100%;
+}
+
+.content {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.content.ar {
+  --direction-var: rtl;
+}
+
+@media (min-width: 576px) {
+  .content {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .content {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .content {
+    max-width: 960px;
+    height: 100vh;
+  }
+}
+@media (min-width: 1200px) {
+  .content {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .content {
+    max-width: 1320px;
+  }
+}
+.login-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  direction: var(--direction-var);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.login-div .login-form {
+  width: 100%;
+  order: 1;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 100px;
+}
+.login-div .login-form .login-txt {
+  font-weight: 700;
+  font-size: var(--font-size-xlarg);
+  letter-spacing: 0em;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.login-div .login-form .login-info {
+  margin-top: 0;
+  color: var(--color-base);
+  font-size: var(--font-size-meduim);
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+.login-div .login-form .div-item-input-txt {
+  max-width: 364px;
+  height: 52px;
+  border-radius: 16px;
+  background: rgba(240, 237, 255, 0.8);
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.login-div .login-form .div-item-input-txt img {
+  width: 17px;
+  height: 21px;
+}
+.login-div .login-form .div-item-input-txt input {
+  background: transparent;
+  border: 0px;
+  outline: 0;
+  flex-grow: 1;
+  padding: 10px;
+}
+.login-div .login-form .div-item-submit-btn {
+  text-align: center;
+}
+.login-div .login-form .div-item-submit-btn .login-btn {
+  width: 124px;
+  height: 52px;
+  border-radius: 16px;
+  border: 0;
+  outline: 0;
+  background: linear-gradient(99.78deg, #9181f4 -5.85%, #5038ed 109.55%);
+  color: var(--color-white);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  cursor: pointer;
+}
+.login-div .login-form .login-others {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: var(--color-base);
+}
+.login-div .login-form .login-others span {
+  font-weight: 700;
+  color: var(--color-base-sec);
+}
+.login-div .login-form .item-social {
+  height: 52px;
+  border: 1px solid #f0edff;
+  border-radius: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.login-div .login-form .item-social img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.login-div .login-form .item-social p {
+  color: var(--color-base-sec);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+.login-div .login-form .item-social p span {
+  font-weight: 700;
+}
+.login-div .login-image {
+  order: 0;
+  border-radius: 10px;
+  align-self: stretch;
+  direction: ltr;
+  width: 100%;
+  min-height: 400px;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/Rectangle-bak-4.png);
+  background-size: cover;
+}
+.login-div .login-image .center-image {
+  background-image: url(images/Rectangle-bck-5.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 37px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5215686275);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5215686275);
+  border-right: 1px solid rgba(255, 255, 255, 0.5215686275);
+  border-left: 1px solid rgba(255, 255, 255, 0.5215686275);
+  width: 60%;
+  /*height: 68%;*/
+  height: 250px;
+  position: relative;
+}
+.login-div .login-image .center-image div.woman {
+  background: url(images/women-with-tab-1.png);
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  width: 180%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: -35px;
+}
+.login-div .login-image .center-image .img-txt {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  color: var(--color-white);
+  z-index: 2000;
+  max-width: 50%;
+  padding-left: 20px;
+}
+.login-div .login-image .center-image .img-group {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  position: absolute;
+  left: -20px;
+  bottom: 12%;
+}
+@media (min-width: 365px) {
+  .login-div .login-image .center-image .img-group {
+    width: 50px;
+    height: 50px;
+    left: -30px;
+  }
+  .login-div .login-image .center-image .img-txt {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .login-div .login-image .center-image .div.woman {
+    right: -53px;
+  }
+}
+@media (min-width: 475px) {
+  .login-div .login-image .center-image .img-txt {
+    font-size: 25px;
+    line-height: 36px;
+  }
+}
+@media (min-width: 576px) {
+  .login-div .login-image .center-image div.woman {
+    background-size: cover;
+    background-position-x: right;
+    width: 110%;
+    right: -85px;
+  }
+  .login-div .login-image .center-image .img-txt {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .login-div .login-image .center-image .img-group {
+    width: 79px;
+    height: 79px;
+  }
+  .login-div .login-image .center-image .img-txt {
+    font-size: 35px;
+    line-height: 46px;
+  }
+}
+@media (min-width: 992px) {
+  .login-div .login-image .center-image .img-txt {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .login-div .login-image .center-image .img-txt {
+    font-size: 32px;
+    line-height: 46px;
+  }
+}
+@media (min-width: 475px) {
+  .login-div .login-image .center-image {
+    width: 65%;
+    height: 300px;
+  }
+}
+@media (min-width: 576px) {
+  .login-div .login-image .center-image {
+    height: 450px;
+  }
+}
+@media (min-width: 576px) {
+  .login-div .login-image {
+    min-height: 598px;
+  }
+}
+
+@media (min-width: 992px) {
+  .login-div {
+    flex-direction: row;
+  }
+  .login-div .login-form {
+    order: 0;
+  }
+  .login-div .login-image {
+    order: 1;
+    min-height: auto;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .login-div .login-image .center-image {
+    height: 75%;
+  }
+}
