@@ -283,16 +283,24 @@ body {
 }
 @media (min-width: 992px) {
   .login-div .login-image .center-image .img-txt {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 40px;
   }
 }
 @media (min-width: 1200px) {
   .login-div .login-image .center-image .img-txt {
+    font-size: 25px;
+    line-height: 46px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .login-div .login-image .center-image .img-txt {
     font-size: 32px;
     line-height: 46px;
   }
 }
+
 @media (min-width: 475px) {
   .login-div .login-image .center-image {
     width: 65%;
